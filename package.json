@@ -1,0 +1,30 @@
+{
+  "name": "adcoc",
+  "version": "1.0.0",
+  "description": "中国行政规划结构数据2020",
+  "keywords": [
+    "adcoc",
+    "data",
+    "china"
+  ],
+  "main": "index.min.js",
+  "homepage": "https://github.com/idler8/adcoc",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:idler8/adcoc.git"
+  },
+  "author": {
+    "name": "idler8",
+    "email": "code@idler8.com"
+  },
+  "scripts": {
+    "build": "node ./compile/index.js"
+  },
+  "files":[
+    "src/**/*",
+    "source/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
