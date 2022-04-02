@@ -16,6 +16,12 @@ console.log(treeParser([
     { 'code': '110101', 'name': '东城区' },
 ]))
 ```
+```html
+<script src="//unpkg.com/adcoc@1.0.0/source/tree.iife.js"></script>
+<script>
+    console.log(window.adcocTree)
+</script>
+```
 
 ## License
 
