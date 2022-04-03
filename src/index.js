@@ -1,1 +1,1 @@
-exports.treeParser = require('./parsers/tree.js')
+exports.treeParser = require('./parsers/tree.js');

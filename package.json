@@ -18,13 +18,20 @@
     "email": "code@idler8.com"
   },
   "scripts": {
-    "build": "node ./compile/index.js"
+    "build": "node ./compile/index.js",
+    "prepare": "husky install"
   },
-  "files":[
+  "files": [
     "src/**/*",
     "source/*"
   ],
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
+    "eslint": "^8.12.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.7"
+  },
   "license": "MIT"
 }
