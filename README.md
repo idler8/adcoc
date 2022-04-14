@@ -1,5 +1,6 @@
 # adcoc
-
+##### Administrative division code of China
+##### 中国行政区划代码
 ## 数据
 全部来自于[民政局官方网站](http://www.mca.gov.cn/article/sj/xzqh/)
 
@@ -12,17 +13,17 @@
 
 #### 应用
 ```javascript
-import treeData from 'adcoc/source/tree.json'
-console.log(treeData)
-
-import {treeParser} from 'adcoc'
-console.log(treeParser([
+import { treeParser } from 'adcoc'
+const treeSourceCache = treeParser();
+console.log(treeSourceCache)
+const customTreeSourceCache = treeParser([
     { 'code': '110000', 'name': '北京市' },
     { 'code': '110101', 'name': '东城区' },
-]))
+]);
+console.log(customTreeSourceCache)
 ```
 ```html
-<script src="//unpkg.com/adcoc@1.0.0/source/tree.iife.js"></script>
+<script src="//unpkg.com/adcoc/source/tree.iife.js"></script>
 <script>
     console.log(window.adcocTree)
 </script>

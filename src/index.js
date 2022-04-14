@@ -1,1 +1,1 @@
-exports.treeParser = require('./parsers/tree.js');
+export { default as treeParser } from './parsers/tree.js';
