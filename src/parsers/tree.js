@@ -23,8 +23,9 @@ export function getParser(options, handleValues) {
       const values = handleValues[value];
       const response = { [valueKey]: value };
       if (suffix) response[childrenKey] = forEach(children[code], prefix + code, nextSuffix);
+      if (suffix === '00') response[labelKey] = '市辖区';
       if (values) {
-        response[labelKey] = values.name;
+        response[labelKey] = values.name || '市辖区';
         if (revokeKey && values.revoke) response[revokeKey] = true;
       }
       return response;
